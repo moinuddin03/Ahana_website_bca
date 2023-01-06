@@ -201,19 +201,6 @@
        </div>
     <!----- Search bar End ----->
     <!----- Header Carousel Start ----->
-    <?php
-    include'connection.php';
-
-     $select = "SELECT * FROM slider";
-     $query = mysqli_query($conn,$select);
-     
-     $img;
-     while($result= mysqli_fetch_array($query))
-     {
-        $img[]=$result['photo'];
-     }
-    
-    ?>
        <section class="header-carousel">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
              <ol class="carousel-indicators">
